@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <table name="culturas">
+        <column>
+            <name>id_cultura</name>
+            <type>NUMBER(10)</type>
+            <description>Identificador único da cultura (PK)</description>
+        </column>
+        <column>
+            <name>nome_cultura</name>
+            <type>VARCHAR2(50)</type>
+            <description>Nome da cultura agrícola</description>
+        </column>
+    </table>
+    <table name="estados">
+        <column>
+            <name>id_estado</name>
+            <type>NUMBER(10)</type>
+            <description>Identificador único do estado (PK)</description>
+        </column>
+        <column>
+            <name>nome_estado</name>
+            <type>VARCHAR2(50)</type>
+            <description>Nome do estado</description>
+        </column>
+    </table>
+    <table name="safras">
+        <column>
+            <name>ano_safra</name>
+            <type>NUMBER(4)</type>
+            <description>Ano da safra (PK)</description>
+        </column>
+    </table>
+    <table name="producoes">
+        <column>
+            <name>id_producao</name>
+            <type>NUMBER(4)</type>
+            <description>Identificador único da produção (PK)</description>
+        </column>
+        <column>
+            <name>quantidade_produzida</name>
+            <type>NUMBER(15, 2)</type>
+            <description>Quantidade produzida em toneladas</description>
+        </column>
+        <column>
+            <name>area_plantada</name>
+            <type>NUMBER(10, 2)</type>
+            <description>Área plantada em hectares</description>
+        </column>
+        <column>
+            <name>rendimento</name>
+            <type>NUMBER(8, 2)</type>
+            <description>Rendimento em toneladas por hectare</description>
+        </column>
+        <column>
+            <name>safras_ano_safra</name>
+            <type>NUMBER(4)</type>
+            <description>Ano da safra, chave estrangeira para safras</description>
+        </column>
+        <column>
+            <name>culturas_id_cultura</name>
+            <type>NUMBER(10)</type>
+            <description>Identificador da cultura, chave estrangeira para culturas</description>
+        </column>
+        <column>
+            <name>estados_id_estado</name>
+            <type>NUMBER(10)</type>
+            <description>Identificador do estado, chave estrangeira para estados</description>
+        </column>
+    </table>
+</database>

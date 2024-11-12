@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelo Banco de Dados do Agro" id="263AFA43-6FEE-4918-565C-E3887A5BD4A5" version="3.5">
+<createdBy>tiago</createdBy>
+<createdTime>2024-10-28 11:12:49 UTC</createdTime>
+<ownerDesignName>Modelagem Projeto SIP</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>263AFA43-6FEE-4918-565C-E3887A5BD4A5</designId>
+</OSDM_Design>
